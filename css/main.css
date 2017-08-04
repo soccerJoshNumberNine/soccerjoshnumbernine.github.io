@@ -1,0 +1,41 @@
+.panel {
+  font-family: Courier;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.plain-link {
+  text-decoration: none;
+}
+
+.standard {
+  font-family: Courier;
+} td.standard {
+  text-align: center;
+  width: 100px;
+} table.standard {
+  text-align: center;
+  margin: auto;
+} tr.standard {
+  text-align: center;
+}
+
+.link {
+  color: #fff;
+  padding: 5px;
+} .link:hover {
+  background-color: #795548;
+}
+
+.centered {
+  text-align: center;
+}
+
+.black {
+  color: #000000;
+}
+
+.white {
+  color: #ffffff;
+}

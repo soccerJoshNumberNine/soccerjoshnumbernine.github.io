@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Home</title>
 </head>
 <body>
-  <div class="panel _#000000">
-    <div class="white centered">
-      <h3>Welcome to my portfolio!</h3>
+  <!-- Navigation Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="navSidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  </div>
+  
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container" style="text-align: center">
+      <p class="w3-xlarge">Welcome to My Personal Portfolio!</p>
+      <p>My Favorite Repositiories:</p>
     </div>
-    <table id="navigation-table" class="standard"></table>
   </div>
-  <div class="panel _#607d8b">
-
+  <div class="w3-container w3-white w3-striped">
+    <table class="w3-table">
+      <tr>
+        <th>Repository Name</th>
+        <th>Description</th>
+        <th>Link</th>
+       </tr>
+        <tr>
+          <td>crispy-goggles</td>
+          <td>My first web app, crispy-goggles is designed to keep track of football/soccer scoring.</td>
+          <td>
+            <a href="https://github.com/footykeeper/crispy-goggles/#crispy-goggles" target="_blank">
+              https://github.com/footykeeper/crispy-goggles/
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          lynx
+        </td>
+        <td>
+          A reminder program for me, lynx reminds me of events for the day.
+        </td>
+        <td>
+          <a href="https://github.com/soccerjoshnumbernine/lynx/#lynx" target="_blank">https://github.com/soccerjoshnumbernine/lynx</a>
+        </td>
+      </tr>
+      <tr>
+        <td>https://smittycraft.github.io/</td>
+        <td>Contains some of my APIs and more, but much of the code is deprecated.</td>
+        <td>
+          <a href="https://github.com/SmittyCraft/smittycraft.github.io#httpssmittycraftgithubio" target="_blank">
+            https://smittycraft.github.io/
+          </a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <div class="panel _#ffffff">
-
-  </div>
-  <div class="panel _#3f51b5">
-
-  </div>
-  <script src="https://soccerjoshnumbernine.github.io/apis/styling.js"></script>
+  <script>
+    // Sidebar controllers
+    function w3_open() {
+      document.getElementById("navSidebar").style.display = "block";
+    } function w3_close() {
+      document.getElementById("navSidebar").style.display = "none";
+    }
+  </script>
+  <script src="https://smittycraft.github.io/javascript/page-setup.js"></script>
 </body>
 </html>

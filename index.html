@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Home</title>
 </head>
 <body>
-  <div class="panel _#000000">
-    <div class="white centered">
-      <h3>Welcome to my portfolio!</h3>
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="navSidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="https://soccerjoshnumbernine.github.io" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+  </div>
+  
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container" style="text-align: center">
+      <p class="w3-xlarge">Welcome to my Personal Portfolio!</p>
+      
     </div>
-    <table id="navigation-table" class="standard"></table>
   </div>
-  <div class="panel _#607d8b">
-
-  </div>
-  <div class="panel _#ffffff">
-
-  </div>
-  <div class="panel _#3f51b5">
-
-  </div>
-  <script src="https://soccerjoshnumbernine.github.io/apis/styling.js"></script>
+  <script>
+    // Sidebar controllers
+    function w3_open() {
+      document.getElementById("navSidebar").style.display = "block";
+    } function w3_close() {
+      document.getElementById("navSidebar").style.display = "none";
+    }
+  </script>
 </body>
 </html>
